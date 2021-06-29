@@ -62,8 +62,8 @@ ctx.strokeText('Hello world', 50, 100);
   using them in a canvas.</p>
 
 <pre class="brush: js">let f = new FontFace('test', 'url(x)');
-
-f.load().then(function() {
+f.load();
+f.loaded.then(function() {
   // Ready to use the font in a canvas context
 });</pre>
 
